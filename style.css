@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.title{
+  text-align: center;
+  color: #145987;
+}
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: calc(100% - 20px);
+  /* background-color: #ddd; */
+}
+
+.timeline-item:first-child:after {
+  content: none;
+}
+
+.timeline-item-header {
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.timeline-item-content {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+
+.timeline-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: calc(100% - 20px);
+  /* background-color: #2980b9; */
+}
+
+.timeline-item:first-child:after {
+  content: none;
+}
+
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2980b9;
+  z-index: 10;
+}
+
+
+.timeline-item-header {
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #2980b9;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.timeline-item-content {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+
